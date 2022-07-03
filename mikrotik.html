@@ -6,16 +6,24 @@
 body {
     margin: 0;            /* Reset default margin */
 }
-iframe {
+.i1 {
     display: block;       /* iframes are inline by default */
     background: #000;
     border: none;         /* Reset default border */
-    height: 100vh;        /* Viewport-relative units */
+    height: 38vh;        /* Viewport-relative units */
+    width: 100vw;
+}
+.i2 {
+    display: block;       /* iframes are inline by default */
+    background: #000;
+    border: none;         /* Reset default border */
+    height: 40vh;        /* Viewport-relative units */
     width: 100vw;
 }
 </style>
 </head>
-<body><iframe src='https://thingspeak.com/channels/1769301/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=1440&title=User+Aktif&type=line&width=auto' ></iframe></body>
+<body><iframe class="i1" src='https://thingspeak.com/channels/1769301/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=1440&title=User+Aktif&type=line&width=auto' ></iframe></body>
+<body><iframe class="i2" src='https://thingspeak.com/apps/matlab_visualizations/469874?&width=auto' ></iframe></body>
 </html>
 
 
